@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swastik's Professional Page</title>
+        <link rel="stylesheet" href="aboutme.css">
+    </head>
+    <body>
+    <div class="navbar">
+        <img src="logo2.png" class="LOGO" alt="Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="educational.html">Educational Background</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="publications.html">Paper/Patent Publication</a></li>
+          <li><a href="awards.html">Awards and Achievements</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="memberships.html">Membership</a></li>
+          <li><a href="research.html">Research Thrust Area</a></li>
+          <li><a href="events.html">List of Events</a></li>
+          <li><a href="paper.html">Poster/Paper Presentation</a></li>
+          <li><a href="courses.html">Course Completed</a></li>
+          <li><a href="contact.html">Contact Address</a></li>
+        </ul>
+      </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Where Tech Meets Passion</h1>
+            <p>My Digital Odyssey: Exploring Cyber Security, AI, and Modern Tech</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm <strong>Swastik Manna</strong>, a first-year B.Tech student specializing in Cyber Security. I'm passionate about AI, Cyber Security, and other modern technologies. Currently pursuing a degree at <strong>IEM Newtown</strong>, affiliated with <strong>UEMK</strong>.</p>
+                    <p>My goal is to dive deep into exciting projects, contribute to the tech community, and continue learning every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Education Section -->
+        <section class="education-section" id="education">
+            <h2>Educational Background</h2>
+            <div class="education-cards">
+                <div class="education-card">
+                    <h3>B.Tech in Cyber Security</h3>
+                    <p>Institute of Engineering and Management (IEM), Newtown</p>
+                </div>
+                <div class="education-card">
+                    <h3>Current Year</h3>
+                    <p>First Year (2024)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Python Projects</h3>
+                    <p>Basic to modarate Python Projects like - Games, Scientefic Calculator, Chatbots.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Network Security Projects</h3>
+                    <p>Projects like - Port Scanner, Network Vulnerability Scanner, Basic Cryptography Projects.</p>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: swastikmanna2006@gmail.com</p>
+            <p>Phone: 9163067541</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Swastik Manna. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Highlight the active link based on the current URL path (ignores domain)
+        const currentPage = window.location.pathname.split("/").pop();
+        const menuItems = document.querySelectorAll('.navbar li a');
+
+        menuItems.forEach(item => {
+            if (item.getAttribute("href") === currentPage) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
+    </body>
+</html>

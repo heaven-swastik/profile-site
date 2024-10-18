@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List of Events</title>
+<link rel="stylesheet" href="events.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="logo2.png" class="LOGO" alt="Logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="educational.html">Educational Background</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="publications.html">Paper/Patent Publication</a></li>
+      <li><a href="awards.html">Awards and Achievements</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="memberships.html">Membership</a></li>
+      <li><a href="research.html">Research Thrust Area</a></li>
+      <li><a href="events.html">List of Events</a></li>
+      <li><a href="paper.html">Poster/Paper Presentation</a></li>
+      <li><a href="courses.html">Course Completed</a></li>
+      <li><a href="contact.html">Contact Address</a></li>
+    </ul>
+  </div>
+
+<section class="events-section">
+<h2>Participated Events</h2>
+<div class="event-card">
+<h3>Smart India Hackathon (SIH)</h3>
+<p class="date">Date: 16th September, 2024</p>
+<p>Participated in a hackathon, showcasing coding skills and innovative solutions.We made an online chatbot tickting system.</p>
+</div>
+<div class="event-card">
+<h3>Inter-College Poster Competition</h3>
+<p class="date">Date: 26th september, 2024</p>
+<p>Presented a poster on Chemistry and Biotechnology, demonstrating research and creativity.</p>
+</div>
+<div class="event-card">
+<h3>Observatory Sessions</h3>
+<p class="date">Ongoing</p>
+<p>Actively participated in observatory sessions arranged by our college, expanding knowledge and networking.</p>
+</div>
+<div class="event-card">
+<h3>Hackathon 2.0</h3>
+<p>Participated in another hackathon, refining problem-solving skills and collaboration.</p>
+</div>
+</section>
+<script>
+  // Select all nav links
+  const navLinks = document.querySelectorAll('.navbar ul li a');
+
+  // Loop through links and add the active class based on the current URL
+  navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+          link.classList.add('active');
+      }
+  });
+</script>
+</body>
+</html>

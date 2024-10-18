@@ -1,0 +1,134 @@
+/* Membership Page */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('membershipsbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    }
+        
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: -60px; /* Start hidden */
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  border-bottom: 3px solid transparent;
+  transition: top 0.5s ease, border-bottom 0.5s ease;
+  animation: slideDownNavbar 1.5s ease forwards 0.5s; /* Delay navbar entrance */
+}
+
+@keyframes slideDownNavbar {
+  to {
+      top: 0;
+  }
+}
+
+.navbar:hover {
+  border-bottom: 3px solid #FF6EC7;
+}
+
+.navbar .LOGO {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.navbar ul li {
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #c1c1c1;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Highlight active page link */
+.navbar ul li a.active {
+  color: #FF6EC7;  /* Highlight color */
+  text-shadow: 0 0 10px #FF6EC7, 0 0 20px #FF6EC7;
+  font-weight: bold;
+}
+
+/* Hover effects for links */
+.navbar ul li a:hover {
+  color: #FF6EC7;
+  text-shadow: 0px 0px 8px #FF6EC7;
+}
+
+/* Logo Hover Effect */
+.LOGO:hover {
+  filter: drop-shadow(0px 0px 20px #FF6EC7);
+  transform: scale(1.1);
+}
+    
+    .membership-section {
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .membership-section h2 {
+    font-size: 3.5rem;
+    color: #FF6EC7;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    }
+    
+    .membership-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #FF6EC7;
+    padding: 30px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    }
+    .membership-card:hover {
+        transform: translateY(-5px);
+        }
+        
+        .membership-card h3 {
+        font-size: 2rem;
+        color: #FF6EC7;
+        }
+        
+        .membership-card p {
+        font-size: 1.2rem;
+        color: #ddd;
+        }
+        body {
+          animation: fadeInUp 1s ease-in;
+        }
+        
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+            

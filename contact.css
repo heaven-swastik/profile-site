@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('contactbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: -60px; /* Start hidden */
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  border-bottom: 3px solid transparent;
+  transition: top 0.5s ease, border-bottom 0.5s ease;
+  animation: slideDownNavbar 1.5s ease forwards 0.5s; /* Delay navbar entrance */
+}
+
+@keyframes slideDownNavbar {
+  to {
+      top: 0;
+  }
+}
+
+.navbar:hover {
+  border-bottom: 3px solid #b4b8ef;
+}
+
+.navbar .LOGO {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.navbar ul li {
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #c1c1c1;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Highlight active page link */
+.navbar ul li a.active {
+  color: #b4b8ef;  /* Highlight color */
+  text-shadow: 0 0 10px #b4b8ef, 0 0 20px #b4b8ef;
+  font-weight: bold;
+}
+
+/* Hover effects for links */
+.navbar ul li a:hover {
+  color: #b4b8ef;
+  text-shadow: 0px 0px 8px #b4b8ef;
+}
+
+/* Logo Hover Effect */
+.LOGO:hover {
+  filter: drop-shadow(0px 0px 20px #b4b8ef);
+  transform: scale(1.1);
+}
+
+/* Main container */
+.contact-container {
+  text-align: center;
+  width: 80%;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  color: #7C82D5;
+  animation: fadeIn 1.5s ease;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.heading p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Content box holding all cards */
+.content-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Transparent boxes for each card */
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 250px;
+  transition: transform 0.4s, background-color 0.3s, box-shadow 0.3s ease;
+  animation: slideUp 1.5s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.contact-card h2 {
+  color: #7C82D5;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.contact-card p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Hover Effects */
+.contact-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 40px rgba(124, 130, 213, 0.7);
+}
+
+.contact-card p:hover {
+  text-shadow: 0px 0px 8px #FFF01F;
+  transition: text-shadow 0.3s ease;
+}
+
+/* Hyperlink style */
+.contact-card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-shadow: 0px 0px 8px #FFF01F;
+  transition: text-shadow 0.3s ease;
+}
+
+/* THANK YOU Section */
+.thank-you-section {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.thank-you-section h1 {
+  font-size: 4rem;
+  color: #FFF01F;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  animation: thankYouAnimation 2s ease infinite alternate;
+  text-shadow: 0 0 10px #FFF01F, 0 0 20px #FF8C00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* "THANK YOU" animation */
+@keyframes thankYouAnimation {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 10px #FFF01F, 0 0 20px #FF8C00;
+  }
+  100% {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px #FFF01F, 0 0 30px #FF8C00;
+  }
+}

@@ -1,0 +1,52 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership</title>
+<link rel="stylesheet" href="memberships.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="logo2.png" class="LOGO" alt="Logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="educational.html">Educational Background</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="publications.html">Paper/Patent Publication</a></li>
+      <li><a href="awards.html">Awards and Achievements</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="memberships.html">Membership</a></li>
+      <li><a href="research.html">Research Thrust Area</a></li>
+      <li><a href="events.html">List of Events</a></li>
+      <li><a href="paper.html">Poster/Paper Presentation</a></li>
+      <li><a href="courses.html">Course Completed</a></li>
+      <li><a href="contact.html">Contact Address</a></li>
+    </ul>
+  </div>
+<section class="membership-section">
+<h2>Membership</h2>
+<div class="membership-card">
+<h3>Currently Exploring Opportunities</h3>
+<p>As a first-year student, I am still exploring various clubs and organizations within my college to find the best fit for my interests and skills.</p>
+</div>
+<div class="membership-card">
+<h3>Future Plans</h3>
+<p>I plan to join clubs related to technology, coding, dance, photography and innovation to expand my knowledge and network with like-minded individuals.</p>
+</div>
+</section>
+<script>
+  // Select all nav links
+  const navLinks = document.querySelectorAll('.navbar ul li a');
+
+  // Loop through links and add the active class based on the current URL
+  navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+          link.classList.add('active');
+      }
+  });
+</script>
+</body>
+</html>
+

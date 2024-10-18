@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Swastik Manna</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Orbitron:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo2.png" class="LOGO" alt="Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="educational.html">Educational Background</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="publications.html">Paper/Patent Publication</a></li>
+          <li><a href="awards.html">Awards and Achievements</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="memberships.html">Membership</a></li>
+          <li><a href="research.html">Research Thrust Area</a></li>
+          <li><a href="events.html">List of Events</a></li>
+          <li><a href="paper.html">Poster/Paper Presentation</a></li>
+          <li><a href="courses.html">Course Completed</a></li>
+          <li><a href="contact.html">Contact Address</a></li>
+        </ul>
+      </div>
+    <div class="contact-container">
+        <div class="heading">
+            <h1>Get In Touch</h1>
+            <p>Feel free to contact me for any collaboration or queries.</p>
+        </div>
+        <div class="content-box">
+            <div class="contact-card">
+                <h2>Name</h2>
+                <p>Swastik Manna</p>
+            </div>
+            <div class="contact-card">
+                <h2>Phone</h2>
+                <p>9163067541</p>
+            </div>
+            <div class="contact-card">
+                <h2>Email</h2>
+                <p><a href="mailto:swastikmanna2006@gmail.com">swastikmanna2006@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <h2>Address</h2>
+                <p>Nischinda East Ghoshpara, Bally, Howrah. Pin - 711227</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- "THANK YOU" Section -->
+    <div class="thank-you-section">
+        <h1>THANK YOU</h1>
+    </div>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Select all nav links
+        const navLinks = document.querySelectorAll('.navbar ul li a');
+
+        // Loop through links and add the active class based on the current URL
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

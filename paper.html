@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poster/Paper Presentation</title>
+    <link rel="stylesheet" href="paper.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo2.png" class="LOGO" alt="Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="educational.html">Educational Background</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="publications.html">Paper/Patent Publication</a></li>
+          <li><a href="awards.html">Awards and Achievements</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="memberships.html">Membership</a></li>
+          <li><a href="research.html">Research Thrust Area</a></li>
+          <li><a href="events.html">List of Events</a></li>
+          <li><a href="paper.html">Poster/Paper Presentation</a></li>
+          <li><a href="courses.html">Course Completed</a></li>
+          <li><a href="contact.html">Contact Address</a></li>
+        </ul>
+      </div>
+
+      <section class="presentation-section">
+        <h2><b>Poster / Paper Presentation</b></h2>
+        <div class="presentation-card">
+        <h3><b>Award-Winning Poster: Artificial Intelligence - The Future of Early Cancer Detection</b></h3>
+        <p style="color: #34C759"><b>Achievement:</b></p>
+        <p>I proudly led my team to secure the Third Runner-up position in the prestigious poster competition organized by our college. This accomplishment showcases our collective effort, creativity, and dedication to excellence.</p>
+        <p style="color: #34C759"><b>Role:</b></p>
+        <p>As the group leader, I spearheaded the research, design, and presentation of our innovative poster, highlighting the potential of Artificial Intelligence in revolutionizing early cancer detection.</p>
+        </div>
+        <div class="presentation-card">
+            <h3>Check out the poster in Google Drive</h3>
+            <p style="color: #34C759"><b>Access Poster:</b></p>
+            <p><a href="https://drive.google.com/file/d/1orcdv6msa4K8LLCSEd8ETLt5RbJKXrZ2/view?usp=drivesdk" target="_blank" style="color: #fff; text-decoration: none;">CLICK ME TO SEE</a></p>
+
+            
+        </div>
+
+        </section>
+        
+    <script>
+        // Highlight the active link based on the current URL path (ignores domain)
+        const currentPage = window.location.pathname.split("/").pop();
+        const menuItems = document.querySelectorAll('.navbar li a');
+      
+        menuItems.forEach(item => {
+            if (item.getAttribute("href") === currentPage) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active'); // Remove active class if not the current page
+            }
+        });
+      </script>
+</body>
+</html>

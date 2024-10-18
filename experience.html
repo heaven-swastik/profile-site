@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+  <link rel="stylesheet" href="experience.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="logo2.png" class="LOGO" alt="Logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="educational.html">Educational Background</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="publications.html">Paper/Patent Publication</a></li>
+      <li><a href="awards.html">Awards and Achievements</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="memberships.html">Membership</a></li>
+      <li><a href="research.html">Research Thrust Area</a></li>
+      <li><a href="events.html">List of Events</a></li>
+      <li><a href="paper.html">Poster/Paper Presentation</a></li>
+      <li><a href="courses.html">Course Completed</a></li>
+      <li><a href="contact.html">Contact Address</a></li>
+    </ul>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Experience</h1>
+      <p>Currently, I am a 1st-year student with hands-on projects in Python and two hackathon experiences in CS.</p>
+    </div>
+  </section>
+  <div class="experience-grid">
+    <div class="experience-card">
+      <h3>Hackathon Participation</h3>
+      <p>Participated in college-level hackathons, tackling real-world tech challenges and fostering innovative problem-solving, collaboration, and coding skills in intense 24-hour coding sprints.</p>
+    </div>
+    <div class="experience-card">
+      <h3>Python Projects</h3>
+      <p>Developed and deployed basic Python projects, including interactive games and a scientific calculator, demonstrating pro ficiency in coding principles, data structures, and algorithmic thinking.</p>
+    </div>
+    <div class="experience-card">
+      <h3>Team Leadership</h3>
+      <p>Led and mentored a team of 5 members in a poster competition, combining innovation works and economics assignment, ensuring timely completion and showcasing leadership, problem-solving, and team management abilities.</p>
+    </div>
+    <div class="experience-card">
+      <h3>Exploring Programming Fundamentals</h3>
+      <p>Started exploring programming fundamentals, currently learning data structures, algorithms, and web development, eager to expand skillset and contribute to innovative projects and technologies.</p>
+    </div>
+  </div>
+  <script>
+    // Select all nav links
+    const navLinks = document.querySelectorAll('.navbar ul li a');
+  
+    // Loop through links and add the active class based on the current URL
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+  </script>
+</body>
+</html>

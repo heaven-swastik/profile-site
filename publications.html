@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper/Patent Publications</title>
+    <link rel="stylesheet" href="publications.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo2.png" class="LOGO" alt="Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="educational.html">Educational Background</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="publications.html">Paper/Patent Publication</a></li>
+          <li><a href="awards.html">Awards and Achievements</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="memberships.html">Membership</a></li>
+          <li><a href="research.html">Research Thrust Area</a></li>
+          <li><a href="events.html">List of Events</a></li>
+          <li><a href="paper.html">Poster/Paper Presentation</a></li>
+          <li><a href="courses.html">Course Completed</a></li>
+          <li><a href="contact.html">Contact Address</a></li>
+        </ul>
+      </div>
+      <section class="publications-section">
+        <h2><b>Paper/Patent Publications</b></h2>
+        <div class="publication-card">
+        <h3><b>Research Project Details</b></h3>
+        <p class="date"><b>Publication Status:</b> Pending</p>
+        <p>
+            <span style="color: #07f1fd"><b>Research Paper Title:</b> </span> the Psychological Impact of Colour<br>
+        
+            <span style="color: #07f1fd"><b>Type:</b></span> Interdisciplinary Research Project<br>
+        
+            <span style="color: #07f1fd"><b>Research Area:</b> </span> of Colour<br>
+        
+            <span style="color: #07f1fd"><b>Description:</b></span> Investigating the emotional and cognitive effects of colour on human behaviour, bridging the gap between art, design, and technology.<br>
+        
+            <span style="color: #07f1fd"><b>Expected Date of Publication:</b></span> [october 2024]<br>
+        
+            <span style="color: #07f1fd"><b>Journal/Conference:</b></span> International Journal of Colour Science, Psychology, or related conferences<br>
+        
+            <span style="color: #07f1fd"><b>Team:</b></span> A collaborative effort by me, Swatik Manna and my team members.<br>
+        </p>
+        </div>
+        <div class="publication-card">
+        <h3><b>Why We Chose This Topic?</b></h3>
+        <p>We chose to explore the psychology of colour despite being tech field students, driven by our curiosity to think outside the box and expand our knowledge. This interdisciplinary project allows us to merge art, design, and technology, providing a unique opportunity for growth and innovation.</p>
+        </div>
+        </section>
+        
+    <script>
+        // Highlight the active link based on the current URL path (ignores domain)
+        const currentPage = window.location.pathname.split("/").pop();
+        const menuItems = document.querySelectorAll('.navbar li a');
+      
+        menuItems.forEach(item => {
+            if (item.getAttribute("href") === currentPage) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active'); // Remove active class if not the current page
+            }
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;  /* Dark background for contrast */
+    color: #fff;  /* Default white text */
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: -60px; /* Start hidden */
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  border-bottom: 3px solid transparent;
+  transition: top 0.5s ease, border-bottom 0.5s ease;
+  animation: slideDownNavbar 1.5s ease forwards 0.5s; /* Delay navbar entrance */
+}
+
+@keyframes slideDownNavbar {
+  to {
+      top: 0;
+  }
+}
+
+.navbar:hover {
+  border-bottom: 3px solid #ffae00;
+}
+
+.navbar .LOGO {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.navbar ul li {
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #c1c1c1;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Highlight active page link */
+.navbar ul li a.active {
+  color: #ffae00;  /* Highlight color */
+  text-shadow: 0 0 10px #ffae00, 0 0 20px #ffae00;
+  font-weight: bold;
+}
+
+/* Hover effects for links */
+.navbar ul li a:hover {
+  color: #ffae00;
+  text-shadow: 0px 0px 8px #ffae00;
+}
+
+/* Logo Hover Effect */
+.LOGO:hover {
+  filter: drop-shadow(0px 0px 20px #ffae00);
+  transform: scale(1.1);
+}
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('aboutmebg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    text-align: center;
+    color: #fbbd03;  /* Bright yellow for text */
+}
+
+.hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #fbbd03;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background-color: #2f2f2f; /* Dark gray background */
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text {
+  max-width: 600px;
+  color: #f7dc6f; /* Light yellow text */
+}
+
+.about-text p {
+  color: #fff; /* White text for paragraphs */
+}
+
+.about-content img {
+  border-radius: 10px;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Education Section */
+.education-section {
+  padding: 60px 0;
+  background-color: #fbbd03; /* Yellow background */
+}
+
+.education-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.education-card {
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+}
+
+.education-card h3 {
+  color: #fbbd03; /* Yellow heading */
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 0;
+  background-color: #333; /* Dark gray background */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fbbd03; /* Yellow background */
+  color: #333; /* Dark gray text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #2f2f2f; /* Dark gray background */
+  color: #f7dc6f; /* Light yellow text */
+  text-align: center;
+}
+
+.contact-section p {
+  margin: 10px 0;
+  color: #fff; /* White text for paragraphs */
+}
+
+/* Footer */
+.footer {
+  background-color: #2f2f2f; /* Dark gray background */
+  color: #f7dc6f; /* Light yellow text */
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Section Headings */
+.about-section h2, .education-section h2, .projects-section h2, .contact-section h2 {
+  color: #fbbd03; /* Yellow heading */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.education-section h2 {
+    color: #333; /* Dark gray heading */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  body {
+    animation: fadeInUp 1s ease-in;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
